@@ -39,6 +39,15 @@ export class QuotaExceededError extends AppError {
 }
 
 /**
+ * Thrown when a requested resource is not found
+ */
+export class NotFoundError extends AppError {
+  constructor(message: string = "Not found") {
+    super(message, 404);
+  }
+}
+
+/**
  * Error handler for API endpoints
  */
 export function errorHandler(error: unknown) {

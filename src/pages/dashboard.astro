@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ClientDashboard } from '../components/dashboard/ClientDashboard';
+
+// Authentication temporarily disabled
+---
+
+<Layout title="Dashboard">
+  <ClientDashboard client:load />
+</Layout>
